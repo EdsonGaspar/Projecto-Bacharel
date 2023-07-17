@@ -1,6 +1,6 @@
 /*Criando Um carrocel de imagens*/
 const imgs = document.getElementById("img");
-const img = document.querySelector("#img img");
+const img = document.querySelectorAll("#img img");
 
 let idx = 0;
 
@@ -10,6 +10,6 @@ function carrocel(){
     if(idx > img.length - 1){
         idx = 0;
     }
-    imgs.style.transform = 'translateX($(idx * 500)px)';
+    imgs.style.transform = `translateX($(-idx * 500)px)`;
 }
 setInterval(carrocel, 1800);
