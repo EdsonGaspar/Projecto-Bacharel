@@ -3,7 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-div.alinhar{
+.carossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 60vh;
+    width: 90%;
+
+}
+.cont1{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+/*div.alinhar{
     align-items: center;
 }
 section{
@@ -12,19 +24,9 @@ section{
     justify-content: center;
     min-height: 100vh;
 }
-.carossel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 500px;
-    width: 500px;
-}
-.cont1{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
+
 img{
     object-fit: cover;
     height: 500px;
     width: 500px;
-}
+}*/
