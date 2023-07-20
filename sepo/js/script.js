@@ -1,15 +1,15 @@
-/*Criando Um carrocel de imagens*/
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+/*Criando Slide*/
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-let idx = 0;
+setInterval(function(){
+    nextimg();
+}, 4000);
 
-function carrocel(){
-    idx++;
-
-    if(idx > img.length - 1){
-        idx = 0;
+function nextimg(){
+    count++;
+    if(count > 4){
+        count = 1; 
     }
-    imgs.style.transform = `translateX($(-idx * 500)px)`;
+    document.getElementById("radio" + count).checked = true;
 }
-setInterval(carrocel, 1800);

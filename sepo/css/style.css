@@ -20,6 +20,7 @@ div.slaides input{
 .slide{
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 .slide img{
     width: 800px;/*Opcional imagens tendo o mesmo pixel*/
