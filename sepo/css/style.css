@@ -86,7 +86,30 @@ div.slaides input{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
-
+/*Após o Slide
+Manipulando Sala de Voto
+*/
+section.area-voto{
+    width: 100%;
+}
+.area-voto{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.btn-area-voto{
+    background-color: red;
+    color: #fff;
+    padding: 16px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    
+}
+a{
+    text-decoration: none;    
+}
 
 
 
