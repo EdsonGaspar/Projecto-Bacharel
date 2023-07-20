@@ -1,8 +1,16 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Inter', sans-serif;    
+}
+
 section.slaider{
     margin: 0 auto;
     width: 800px;
@@ -89,15 +97,13 @@ div.slaides input{
 /*Após o Slide
 Manipulando Sala de Voto
 */
-section.area-voto{
-    width: 100%;
-}
-.area-voto{
+
+.sala-voto{
     display: flex;
     text-align: center;
     flex-direction: column;
 }
-.btn-area-voto{
+.btn-sala-voto{
     background-color: red;
     color: #fff;
     padding: 16px;
@@ -107,8 +113,51 @@ section.area-voto{
     width: 20vw;
     
 }
-a{
-    text-decoration: none;    
+#Info-partidos{
+    color: red;
+}
+/**/
+/*Inicio Todos os Partidos*/
+.todos-partidos{
+    display: flex;
+    margin: 2px 25px;
+    gap: 15px;
+}
+.informacao-Partidos h2{
+    text-align: center;
+}
+.informacao-Partidos p{
+    text-align: justify;
+}
+.informacao-Partidos{
+    padding: 10px;
+    width: 500px;
+}
+.informacao-Partidos:hover{
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    transition: 1s;
+    border-radius: 8px;
+    
+}
+.informacao-Partidos h3{
+    text-align: center;
+    text-transform: lowercase;
+}
+.informacao-Partidos a{
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Roda pé*/
+footer p{
+    background-color: red;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
 }
 
 
