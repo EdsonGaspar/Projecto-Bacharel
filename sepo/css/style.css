@@ -315,3 +315,21 @@ main h2{
     color: #fff;
     border: 1px solid yellow;
 }
+/*Iniciando o Logout*/
+#logout-ver-bra{
+    display: flex;
+    border: 1px solid green;
+}
+#cabeca-log{
+    margin-bottom: 0;
+}
+/*Lado Vermelho*/
+.logout-vermelho{
+    width: 400px;
+    background-color: #F21616;
+}
+/*Lado Azul*/
+.logout-branco{
+    width: 400px;
+    border: 1px solid red;
+}
