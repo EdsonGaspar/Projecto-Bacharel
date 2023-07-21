@@ -1,82 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala de Votação</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Css local-->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <header>
         <h1>Sistema de Eleições Presidencias Online</h1>
     </header>
     <main>
+        
         <h2>Sala de Voto</h2>
-        <div class="partido" id="MPLA">
-            <h3>MPLA</h3>
-            <img src="./votacao/bandeira-mpla.svg" alt="Bandeira do Partido MPLA">
-            <p>foto do Candidato</p>
-            <img src="./votacao/candidato-mpla.jpg" alt="Foto do Candidato do MPLA">
-            <h4>Projectos do MPLA</h4>
-            <p>
-                <ul>
-                    <li>Mudar o que está mal, e melhorar o que está bom;</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </p>
-            <button>Votar</button>
-            <button>Anular</button>
-        </div>
-        <div class="partido" id="unita">
-            <h3>UNITA</h3>
-            <img src="./votacao/bandeira-unita.png" alt="Bandeira do Partido UNITA">
-    
-            <img src="./votacao/candidato-unita.png" alt="Foto do Candidato do unita">
-            <h4>Projectos do UNITA</h4>
-            <p>
-                <ul>
-                    <li>Coisas que...</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </p>
-            <button>Votar</button>
-            <button>Anular</button>
-        </div>
-        </div>
-        <div class="partido" id="humanista">
-            <h3>Partido Humanista de Angola</h3>
-            <img src="./votacao/bandeira-humanista.png" alt="Bandeira do Partido UNITA">
-    
-            <img src="./votacao/candidato-humanista.jpg" alt="Foto do Candidato do Humanista">
-            <h4>Projectos do Partido Humanista de Angola</h4>
-            <p>
-                <ul>
-                    <li>Coisas que...</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </p>
-            <button>Votar</button>
-            <button>Anular</button>
-        </div>
+        <section id="partidos">
+            <div class="partido container" id="MPLA">
+                <h3>MPLA</h3>
+                <img src="./votacao/bandeira-mpla.svg" alt="Bandeira do Partido MPLA" class="baneira">
+            
+                <div>
+                    <img src="./votacao/candidato-mpla.jpg" alt="Foto do Candidato do MPLA" class="candidato">
+                    <p>Candidato: João Manuel Gonçalves Lourenço <br>
+                    Natural: Lobito(Benguela) <br>
+                    Profissão: Militar, historiador e político</p>
+                </div>
+                <h4>Projectos do MPLA</h4>
+                <p>
+                    <ul>
+                        <li>Limitou em garantir a continuidade de uma série de projectos em andamento nas várias províncias;</li>
+                        <li>Comprometeu a deixar uma Angola melhor a que encontrou;</li>
+                        <li>Prometeu em Malanje a construção de uma centralidade com 2.500 casas;</li>
+                        <li>No Uíge, garantiu uma aposta forte na criação de condições para a exportação de café;</li>
+                        <li>No Uíge, garantiu a construção de raiz de novas instalações para a Universidade Kimpa Vita;</li>
+                        <li> no Bengo, garantiu a construção do hospital geral da Província;</li>
+                        <li>no bengo, garantiu a reabilitação do troço da Estrada Nacional 100 (EN100);</li>
+                        <li>Em Benguela,garantia de investimento na ordem dos 301 milhões de dólares (128 mil milhões de kwanzas);</li>
+                    </ul>
+                </p>
+                <div class="btn-votar">
+                    <button>Votar</button>
+                    <button>Anular</button>
+                </div>
+            </div>
+            <div class="partido container" id="unita">
+                <h3>UNITA</h3>
+                <img src="./votacao/bandeira-unita.png" alt="Bandeira do Partido UNITA" class="baneira">
+
+                <div>
+                    <img src="./votacao/candidato-unita.png" alt="Foto do Candidato do unita" class="candidato">
+                    <p><p>Candidato: Adalberto Costa Júnior <br>
+                        Natural: Chinjenje(Huambo) <br>
+                        Profissão: Político e Engenheiro Eletrotécnico</p></p>
+                </div>
+                <h4>Projectos do UNITA</h4>
+                <p>
+                    <ul>
+                        <li>Criação de um Governo Inclusivo e Participativo (GIP)</li>
+                        <li>Salário mínimo de 150 mil kwanzas</li>
+                        <li>Colocar as pessoas nos lugares certos em função da sua competência</li>
+                        
+                    </ul>
+                </p>
+                <div class="btn-votar">
+                    <button>Votar</button>
+                    <button>Anular</button>
+                </div>
+            </div>
+            <div class="partido container" id="humanista">
+                <h3>Partido Humanista de Angola</h3>
+                <img src="./votacao/bandeira-humanista.png" alt="Bandeira do Partido UNITA" class="baneira">
+                <div>
+                    <img src="./votacao/candidato-humanista.jpg" alt="Foto do Candidato do Humanista" class="candidato">
+                    <p>Candidato: Florbela Catarina "Bela" Malaquias  <br>
+                        Natural: Luena(Moxico) <br>
+                        Profissão: Ativista Política, Jornalista, Escritora, Ex-militar e Advogada</p></p>
+                </div>
+                <h4>Projectos do Partido Humanista de Angola</h4>
+                <p>
+                    <ul>
+                        <li>Prometeu acabar com a fome e a pobreza em Angola;</li>
+                        <li>Prometeu educação gratuita para todos;</li>
+                    </ul>
+                </p>
+                <div class="btn-votar">
+                    <button>Votar</button>
+                    <button>Anular</button>
+                </div>
+            </div>
+        </section>
+        
         <p><button class="submit">CONFIRMAR VOTAÇÃO</button></p>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Script local-->
+    <script src="./js/script.js"></script>
 </body>
 </html>

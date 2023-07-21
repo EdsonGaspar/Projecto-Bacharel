@@ -95,6 +95,23 @@ div.slaides input{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
+#Plaite{
+    margin:0 auto 0px;
+}
+#Plaite a{
+    display: block;
+    width: 150px;
+    color: #F21616;
+    margin: auto;
+    font-weight: bold;
+    padding: 10px;
+
+}
+#Plaite:hover{
+    font-weight: bolder;
+    background-color: #F21616;
+    color: #fff;
+}
 /*Após o Slide
 Manipulando Sala de Voto
 */
@@ -218,4 +235,39 @@ div.conf-senha{
 /*Login lado Branco*/
 .login-branco{
     width: 300px;
+}
+/*Inicio da Estilização da sala de votação*/
+header{
+    background-color: #F21616;
+    color: #F2CB05;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main h2{
+    text-align: center;
+    color: #F21616;
+}
+/*Blocos Partidos*/
+.partido{
+    border: 1px solid red;
+}
+.partido h3{
+    text-align: center;
+}
+.baneira{
+    display: block;
+    margin: 2px auto 10px;
+    width: 300px;
+    
+}
+.candidato{
+    width: 200px;
+    border-radius: 50px;
+}
+
+.btn-votar{
+    margin: auto;
+}
+#partidos{
+    display: flex;
 }
