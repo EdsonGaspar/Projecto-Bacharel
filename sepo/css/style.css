@@ -1,6 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-
 *{
     
     margin: 0;
@@ -254,10 +253,15 @@ main h2{
 .partido h3{
     text-align: center;
 }
+.partido h4{
+    text-align: center;
+    margin-top: 15px;
+}
 .baneira{
     display: block;
     margin: 2px auto 10px;
     width: 300px;
+    height: 180px;
     
 }
 .candidato{
@@ -270,4 +274,44 @@ main h2{
 }
 #partidos{
     display: flex;
+}
+/*Botão das Salas de voto*/
+.btn-votar{
+    display: flex;
+    gap: 15px;
+    
+}
+.btn-local-sala{
+    display: block;
+    margin: auto;
+    width: 70px;
+    padding: 5px;
+    background-color: #F2CB05;
+    border: none;
+    padding: 8px;
+    color: #F21616;
+    margin-bottom: 10px;
+}
+.btn-local-sala:hover{
+    font-weight: bold;
+}
+/*Organizando Imagem do candidato e o paragrafo*/
+.img-p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.img-p p{
+    margin: 0;
+}
+/*Botão de confirmação de Voto*/
+.btn-confirmacao{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    background-color: green;
+    color: #fff;
+    border: 1px solid yellow;
 }
