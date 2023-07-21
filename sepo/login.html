@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--CSS local-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-        <section>
+        <section id="lado-lado">
             <div class="login-vermelho">
                 <h1>ACESSO A CONTA</h1>
                 <form action="sala.html">
-                    <p>Nome do Usuario</p>
-                    <input type="text" name="nomeCompleto">
-                    <p>Senha</p>
-                    <input type="password" name="password">
+                    
+                    <label class="col-sm-5 col-form-label">Nome do Usuario</label>
+                    <input type="text" name="nomeCompleto" class="form-control" placeholder="Insira nome completo">
+                    
+                    <label class="col-sm-2 col-form-label">Senha</label>
+                    <input type="password" name="password" class="form-control" placeholder="Insira a senha">
+                    
                     <div class="conf-senha">
-                        <p><input type="checkbox" name="lembrar-senha" id=""> Lembrar Senha</p>
+                        <p id="p-conf-senha">
+                            <input type="checkbox" name="lembrar-senha" class="form-check-input"> 
+                            <label class="col-form-label">Lembrar Senha</label>
+                        </p>
                         <p>Esqueci Senha</p>
                     </div>
-                    <button>ENTRAR</button>
-                    <p>Não Tenho Conta? <a href="logout.html">Criar Conta</a></p>
+                    
+                    <button class="btn btn-warning btn-local">ENTRAR</button>
+                    <p class="p-login">Não Tenho Conta? <a href="logout.html">Criar Conta</a></p>
                 </form>
             </div>
             <div class="login-branco">
@@ -29,5 +39,10 @@
             </div>
         </section>
     </main>
+
+    <!--Link JS Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Script local-->
+    <script src="./js/script.js"></script>
 </body>
 </html>

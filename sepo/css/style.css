@@ -164,51 +164,58 @@ footer p{
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.carossel{
-    border: 1px solid black;
-
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 60vh;
-    width: 90%;
-
-}
-.cont1{
-    width: 70%;
-    border: 1px solid brown;
+/*Estilizando a Tela de Login*/
+#lado-lado{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+    border: 1px solid red;
+    width: 831px;
+    margin: 80px auto;
+}
+/*Lado vermelho*/
+.login-vermelho{
+    background-color: #F21616;
+    color: #fff;
+    width: 400px;
+    padding: 5px;
+}
+.login-vermelho h1{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+div.conf-senha{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+}
+#p-conf-senha{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.btn-local{
+    display: block;
     margin: auto;
-}*/
-
-/*div.alinhar{
-    align-items: center;
+    width: 200px;
+    
+    color: red;
+    font-weight: 300;
+    
 }
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.btn-local:hover{
+    color: white;
 }
-
-img{
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
-}*/
+.p-login{
+    text-align: center;
+    margin-top: 10px;
+}
+.p-login a{
+    color: #F2CB05;
+}
+/*Login lado Branco*/
+.login-branco{
+    width: 300px;
+}
