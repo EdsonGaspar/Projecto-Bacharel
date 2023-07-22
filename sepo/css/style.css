@@ -221,8 +221,12 @@ div.conf-senha{
     font-weight: 300;
     
 }
+.col-form-label
 .btn-local:hover{
     color: white;
+}
+p{
+    color: #fff;
 }
 .p-login{
     text-align: center;
@@ -241,6 +245,9 @@ header{
     color: #F2CB05;
     text-align: center;
     margin-bottom: 20px;
+}
+header h1{
+    padding: 13px;
 }
 main h2{
     text-align: center;
@@ -318,7 +325,8 @@ main h2{
 /*Iniciando o Logout*/
 #logout-ver-bra{
     display: flex;
-    border: 1px solid green;
+    width: 800px;
+    margin: auto;
 }
 #cabeca-log{
     margin-bottom: 0;
@@ -327,9 +335,66 @@ main h2{
 .logout-vermelho{
     width: 400px;
     background-color: #F21616;
+    padding: 10px;
 }
 /*Lado Azul*/
 .logout-branco{
     width: 400px;
-    border: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 10px;
+}
+header h1{
+    margin-bottom: 0px;
+    background-color: transparent;
+}
+header#cabeca-log{
+    display: flex;
+    flex-direction: row;
+}
+header#cabeca-log div{
+    width: 50%;
+    margin: auto;
+    
+}
+div.amarelo-h1 h1{
+    text-align: right;
+}
+div.vermelho-h1 h1{
+    text-align: left;
+}
+/*header#cabeca-log h1 #quebra{
+    display: block;
+}*/
+header#cabeca-log .amrarelo-h1{
+    color: #F2CB05;
+
+}
+header#cabeca-log .vermelho-h1{
+    color: #F10606;
+    background-color: white;
+}
+.text-amarelo{
+    color: #F2CB05;
+    text-align: center;
+    margin-top: 140px;
+}
+.contacto{
+    color: #F2CB05;
+    text-align: center;
+}
+/*Botão Registar*/
+#btn-Registrar{
+    margin: 8px auto 4px;
+    width: 180px;
+    height: 40px;
+    background-color: #F21616;
+    text-align: center;
+    color: #F2CB05;
+    border: none;
+    border-radius: 5px;
+}
+form p{
+    text-align: center;
+    color: #F21616;
 }
