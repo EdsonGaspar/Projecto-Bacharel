@@ -2,6 +2,9 @@
  Sistema de Eleições Presidências Online para CNE
 
 
+ cria a base de dados com nome * sepodb
+
+
 depos de clonar o projecto abrir o terminal ou cmd no diretorio server e executar o comando
  ```bash
 yarn
