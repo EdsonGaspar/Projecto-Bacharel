@@ -21,6 +21,29 @@ export async function partyRoutes(app: FastifyInstance) {
     return party;
   });
 
+
+  app.put("/party/change", async (request, response) => {
+    const bodyshema = z.object({
+      id: z.string(),
+      name: z.string().min(3),
+      proposal: z.string()
+    });
+
+    const data = bodyshema.parse(request.body);
+
+    const party = await prisma.party.update({
+      where:{
+        id:data.id
+      },
+      data: {
+        nome: data.name,
+        proposal: data.proposal
+      },
+    });
+
+    return response.status(200).send(party);
+  });
+
   app.get("/parties", async (request, response) => {
     const parties = await prisma.party.findMany({
       select: {
