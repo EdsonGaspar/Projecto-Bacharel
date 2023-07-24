@@ -9,7 +9,6 @@ export async function voterRoutes(app: FastifyInstance) {
       name: z.string().min(3),
       password: z.string().min(8),
       bi: z.string(),
-      dateOfBirth: z.date()
     });
 
     const data = bodyshema.parse(request.body);
@@ -32,7 +31,6 @@ export async function voterRoutes(app: FastifyInstance) {
         id: true,
         name: true,
         email: true,
-        dateOfBirth: true,
       },
     });
 
@@ -99,7 +97,7 @@ export async function voterRoutes(app: FastifyInstance) {
     return { token };
   });
 
-  app.put("/party", async (request, response) => {
+  app.put("/voter/party", async (request, response) => {
     const bodyshema = z.object({
       partyId: z.string(),
       voterId: z.string(),
