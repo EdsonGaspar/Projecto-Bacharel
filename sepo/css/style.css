@@ -107,8 +107,7 @@ div.slaides input{
 
 }
 #Plaite:hover{
-    font-weight: bolder;
-    background-color: #F21616;
+    font-weight: bold;
     color: #fff;
 }
 /*Após o Slide
@@ -142,6 +141,7 @@ a{
     display: flex;
     margin: 2px 25px;
     gap: 15px;
+    background-color: #c2a516;
 }
 .informacao-Partidos h2{
     text-align: center;
@@ -316,8 +316,7 @@ main h2{
     display: block;
     margin: auto;
     padding: 10px;
-    margin: 5px;
-    width: 200px;
+    width: 300px;
     background-color: green;
     color: #fff;
     border: 1px solid yellow;
@@ -397,4 +396,37 @@ header#cabeca-log .vermelho-h1{
 form p{
     text-align: center;
     color: #F21616;
+}
+/*Formulario de Informação*/
+div#informacao{
+    margin: 80px auto;
+    width: 600px;
+    background-color: #c2a516;
+    padding: 10px;
+}
+h1._informacao{
+    color: #fff;
+    width: 180px;
+    margin: auto;
+}
+.inf-p{
+    text-align: center;
+}
+/*Historia do */
+#corpo-historia{
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: #c2a516;
+}
+.centro-historia{
+    width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+.centro-historia p{
+    text-align: justify;
+}
+.centro-historia h1{
+    margin-top: 10px;
+    text-align: center;
 }
