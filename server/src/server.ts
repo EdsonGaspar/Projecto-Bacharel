@@ -14,6 +14,7 @@ app.register(jwt, {
 });
 
 app.register(voterRoutes);
+app.register(voterRoutes);
 
 app.listen({ port: 3003 }).then(() => {
   console.log("rodando na porta 3003");

@@ -27,7 +27,8 @@ model Voter {
 model Party {
   id           String @id @default(uuid())
   nome         String @unique
-  votingNumber Int
+  proposal     String
+  votingNumber Int?
 
   voters Voter[]
 
