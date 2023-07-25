@@ -90,9 +90,15 @@ const phaTemplate = (id, votos) => {
 `;
 };
 
-if (!getCookie("sepoToken")) {
+const token = getCookie("sepoToken");
+
+if (!token) {
   alert("Faça o login para poderes votar");
   document.location.href = "./sala.html";
+}
+
+if (token) {
+  userData = parseJwt(token);
 }
 
 async function iniciarATelaDeVoto() {

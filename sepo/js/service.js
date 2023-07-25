@@ -1,4 +1,5 @@
 const baseUrl = "http://localhost:3003";
+let userData = {};
 
 async function loadPartidos() {
   const response = await fetch(`${baseUrl}/parties`);
@@ -8,7 +9,7 @@ async function loadPartidos() {
 
 async function voting(data) {
   const response = await fetch(`${baseUrl}/voter/party`, {
-    method: "POST",
+    method: "PUT",
     body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/json",
@@ -81,6 +82,7 @@ async function handleSubmitLogin(event) {
       return;
     }
 
+    userData = parseJwt(result.token);
     setCookie("sepoToken", result.token, 3);
     alert("Login feito com sucesso");
 
@@ -94,7 +96,7 @@ async function handleSubmitVoting(event) {
   event.preventDefault();
 
   const partyId = event.target.partyId.value;
-  const voterId = event.target.voterId.value;
+  const voterId = userData.sub;
 
   if (!partyId) {
     alert("Selecione um candidato antes de Confirmar");
@@ -111,23 +113,18 @@ async function handleSubmitVoting(event) {
     voterId,
   };
 
-  console.log(data);
+  try {
+    const result = await voting(data);
 
-  // try {
-  //   const result = await login(data);
+    userData = {
+      ...userData,
+      ...result,
+    };
 
-  //   if (!result.token) {
-  //     alert("Acontecer um erro inesperado");
-  //     return;
-  //   }
-
-  //   setCookie("sepoToken", result.token, 3);
-  //   alert("Login feito com sucesso");
-
-  //   document.location.href = "./sala.html";
-  // } catch (error) {
-  //   alert("Error:", error);
-  // }
+    document.location.href = "./sala.html";
+  } catch (error) {
+    alert("Error:", error);
+  }
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -151,4 +148,20 @@ function getCookie(cname) {
     }
   }
   return "";
+}
+
+function parseJwt(token) {
+  var base64Url = token.split(".")[1];
+  var base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+  var jsonPayload = decodeURIComponent(
+    window
+      .atob(base64)
+      .split("")
+      .map(function (c) {
+        return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+      })
+      .join("")
+  );
+
+  return JSON.parse(jsonPayload);
 }
