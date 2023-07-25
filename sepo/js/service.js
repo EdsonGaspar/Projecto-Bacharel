@@ -77,16 +77,19 @@ async function handleSubmitLogin(event) {
   try {
     const result = await login(data);
 
+    if (result.token) {
+      userData = parseJwt(result.token);
+      setCookie("sepoToken", result.token, 3);
+
+      alert("Login feito com sucesso");
+
+      document.location.href = "./sala.html";
+    }
+
     if (!result.token) {
       alert("Acontecer um erro inesperado");
       return;
     }
-
-    userData = parseJwt(result.token);
-    setCookie("sepoToken", result.token, 3);
-    alert("Login feito com sucesso");
-
-    document.location.href = "./sala.html";
   } catch (error) {
     alert("Error:", error);
   }

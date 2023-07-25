@@ -94,7 +94,7 @@ const token = getCookie("sepoToken");
 
 if (!token) {
   alert("Faça o login para poderes votar");
-  document.location.href = "./sala.html";
+  document.location.href = "./login.html";
 }
 
 if (token) {
