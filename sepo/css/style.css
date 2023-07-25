@@ -1,386 +1,397 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
-*{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("./bootstrap.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Inter', sans-serif;    
+body {
+  font-family: "Inter", sans-serif;
 }
 
-section.slaider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+section.slaider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
 }
-div.slaides{
-    width: 400%;
-    height: 400px;
-    display: flex;
+div.slaides {
+  width: 400%;
+  height: 400px;
+  display: flex;
 }
-div.slaides input{
-    display: none;
+div.slaides input {
+  display: none;
 }
-.slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
 }
-.slide img{
-    width: 800px;/*Opcional imagens tendo o mesmo pixel*/
+.slide img {
+  width: 800px; /*Opcional imagens tendo o mesmo pixel*/
 }
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
 }
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
 }
-.manual-btn:hover{
-    background-color: #fff;
+.manual-btn:hover {
+  background-color: #fff;
 }
-#radio1:checked ~ .first{
-    margin-left: 0;
+#radio1:checked ~ .first {
+  margin-left: 0;
 }
-#radio2:checked ~ .first{
-    margin-left: -25%;
+#radio2:checked ~ .first {
+  margin-left: -25%;
 }
-#radio3:checked ~ .first{
-    margin-left: -50%;
+#radio3:checked ~ .first {
+  margin-left: -50%;
 }
-#radio4:checked ~ .first{
-    margin-left: -75%;
+#radio4:checked ~ .first {
+  margin-left: -75%;
 }
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+.navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
 }
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
 }
-#Plaite{
-    margin:0 auto 0px;
+#Plaite {
+  margin: 0 auto 0px;
 }
-#Plaite a{
-    display: block;
-    width: 150px;
-    color: #F21616;
-    margin: auto;
-    font-weight: bold;
-    padding: 10px;
-
+#Plaite a {
+  display: block;
+  width: 150px;
+  color: #f21616;
+  margin: auto;
+  font-weight: bold;
+  padding: 10px;
 }
-#Plaite:hover{
-    font-weight: bold;
-    color: #fff;
+#Plaite:hover {
+  font-weight: bolder;
+  background-color: #f21616;
+  color: #fff;
 }
 /*Após o Slide
 Manipulando Sala de Voto
 */
 
-.sala-voto{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+.sala-voto {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
-.btn-sala-voto{
-    background-color: red;
-    color: #fff;
-    padding: 16px;
-    margin: 20px auto;
-    border: none;
-    border-radius: 10px;
-    width: 20vw;
-    
+.btn-sala-voto {
+  background-color: red;
+  color: #fff;
+  padding: 16px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  width: 20vw;
 }
-#Info-partidos{
-    color: red;
+#Info-partidos {
+  color: red;
 }
 /**/
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /*Inicio Todos os Partidos*/
-.todos-partidos{
-    display: flex;
-    margin: 2px 25px;
-    gap: 15px;
-    background-color: #c2a516;
+.todos-partidos {
+  display: flex;
+  margin: 2px 25px;
+  gap: 15px;
 }
-.informacao-Partidos h2{
-    text-align: center;
+.informacao-Partidos h2 {
+  text-align: center;
 }
-.informacao-Partidos p{
-    text-align: justify;
+.informacao-Partidos p {
+  text-align: justify;
 }
-.informacao-Partidos{
-    padding: 10px;
-    width: 500px;
+.informacao-Partidos {
+  padding: 10px;
+  width: 500px;
 }
-.informacao-Partidos:hover{
-    background-color: red;
-    color: #fff;
-    font-size: 1rem;
-    transition: 1s;
-    border-radius: 8px;
-    
+.informacao-Partidos:hover {
+  background-color: red;
+  color: #fff;
+  font-size: 1rem;
+  transition: 1s;
+  border-radius: 8px;
 }
-.informacao-Partidos h3{
-    text-align: center;
-    text-transform: lowercase;
+.informacao-Partidos h3 {
+  text-align: center;
+  text-transform: lowercase;
 }
-.informacao-Partidos a{
-    font-weight: bolder;
-    text-decoration: underline;
-    cursor: pointer;
+.informacao-Partidos a {
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*Roda pé*/
-footer p{
-    background-color: red;
-    color: #fff;
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-    font-weight: 400;
+footer p {
+  background-color: red;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
 }
 
 /*Estilizando a Tela de Login*/
-#lado-lado{
-    display: flex;
-    border: 1px solid red;
-    width: 831px;
-    margin: 80px auto;
+#lado-lado {
+  display: flex;
+  border: 1px solid red;
+  width: 831px;
+  margin: 80px auto;
 }
 /*Lado vermelho*/
-.login-vermelho{
-    background-color: #F21616;
-    color: #fff;
-    width: 400px;
-    padding: 5px;
+.login-vermelho {
+  background-color: #f21616;
+  color: #fff;
+  width: 400px;
+  padding: 5px;
 }
-.login-vermelho h1{
-    color: #fff;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 10px;
+.login-vermelho h1 {
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
 }
-div.conf-senha{
-    display: flex;
-    align-items: center;
-    gap: 140px;
+div.conf-senha {
+  display: flex;
+  align-items: center;
+  gap: 140px;
 }
-#p-conf-senha{
-    display: flex;
-    align-items: center;
-    gap: 3px;
+#p-conf-senha {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
-.btn-local{
-    display: block;
-    margin: auto;
-    width: 200px;
-    
-    color: red;
-    font-weight: 300;
-    
+.btn-local {
+  display: block;
+  margin: auto;
+  width: 200px;
+
+  color: red;
+  font-weight: 300;
 }
-.col-form-label
-.btn-local:hover{
-    color: white;
+.col-form-label .btn-local:hover {
+  color: white;
 }
-p{
-    color: #fff;
+p {
+  color: #fff;
 }
-.p-login{
-    text-align: center;
-    margin-top: 10px;
+.p-login {
+  text-align: center;
+  margin-top: 10px;
 }
-.p-login a{
-    color: #F2CB05;
+.p-login a {
+  color: #f2cb05;
 }
 /*Login lado Branco*/
-.login-branco{
-    width: 300px;
+.login-branco {
+  width: 300px;
 }
 /*Inicio da Estilização da sala de votação*/
-header{
-    background-color: #F21616;
-    color: #F2CB05;
-    text-align: center;
-    margin-bottom: 20px;
+header {
+  background-color: #f21616;
+  color: #f2cb05;
+  text-align: center;
+  margin-bottom: 20px;
 }
-header h1{
-    padding: 13px;
+header h1 {
+  padding: 13px;
 }
-main h2{
-    text-align: center;
-    color: #F21616;
+main h2 {
+  text-align: center;
+  color: #f21616;
 }
 /*Blocos Partidos*/
-.partido{
-    border: 1px solid red;
+.partido.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.partido h3{
-    text-align: center;
+.partido {
+  border: 1px solid red;
 }
-.partido h4{
-    text-align: center;
-    margin-top: 15px;
+.partido h3 {
+  text-align: center;
 }
-.baneira{
-    display: block;
-    margin: 2px auto 10px;
-    width: 300px;
-    height: 180px;
-    
+.partido h4 {
+  text-align: center;
+  margin-top: 15px;
 }
-.candidato{
-    width: 200px;
-    border-radius: 50px;
+.baneira {
+  display: block;
+  margin: 2px auto 10px;
+  width: 300px;
+  height: 180px;
+}
+.candidato {
+  width: 200px;
+  border-radius: 50px;
 }
 
-.btn-votar{
-    margin: auto;
+.btn-votar {
+  margin: auto;
 }
-#partidos{
-    display: flex;
+#partidos {
+  display: flex;
 }
 /*Botão das Salas de voto*/
-.btn-votar{
-    display: flex;
-    gap: 15px;
-    
+.btn-votar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
-.btn-local-sala{
-    display: block;
-    margin: auto;
-    width: 200px;
-    padding: 5px;
-    background-color: #F2CB05;
-    border: none;
-    padding: 8px;
-    color: #F21616;
-    margin-bottom: 10px;
+.btn-votar input[type="radio"] {
+  display: none;
 }
-.btn-local-sala:hover{
-    font-weight: bold;
+.btn-local-sala {
+  display: block;
+  margin: auto;
+  width: 70px;
+  padding: 5px;
+  border: 1px solid #f2cb05;
+  padding: 8px;
+  color: #270606;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+input:checked + .btn-local-sala,
+.btn-local-sala:hover {
+  background: #f2cb05;
+}
+input[readonly] {
+  max-width: 240px;
+  height: 40px;
+  text-align: center;
 }
 /*Organizando Imagem do candidato e o paragrafo*/
-.img-p{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.img-p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.img-p p{
-    margin: 0;
+.img-p p {
+  margin: 0;
 }
 /*Botão de confirmação de Voto*/
-button.btn-confirmacao{
-    display: block;
-    margin:10px auto;
-    padding: 10px;
-    width: 300px;
-    background-color: green;
-    color: #fff;
-    border: 1px solid yellow;
+
+.btn-confirmacao {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  background-color: green;
+  color: #fff;
+  border: 1px solid yellow;
+  cursor: pointer;
+
 }
 /*Iniciando o Logout*/
-#logout-ver-bra{
-    display: flex;
-    width: 800px;
-    margin: auto;
+#logout-ver-bra {
+  display: flex;
+  width: 800px;
+  margin: auto;
 }
-#cabeca-log{
-    margin-bottom: 0;
+#cabeca-log {
+  margin-bottom: 0;
 }
 /*Lado Vermelho*/
-.logout-vermelho{
-    width: 400px;
-    background-color: #F21616;
-    padding: 10px;
+.logout-vermelho {
+  width: 400px;
+  background-color: #f21616;
+  padding: 10px;
 }
 /*Lado Azul*/
-.logout-branco{
-    width: 400px;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red;
-    padding: 10px;
+.logout-branco {
+  width: 400px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 10px;
 }
-header h1{
-    margin-bottom: 0px;
-    background-color: transparent;
+header h1 {
+  margin-bottom: 0px;
+  background-color: transparent;
 }
-header#cabeca-log{
-    display: flex;
-    flex-direction: row;
+header#cabeca-log {
+  display: flex;
+  flex-direction: row;
 }
-header#cabeca-log div{
-    width: 50%;
-    margin: auto;
-    
+header#cabeca-log div {
+  width: 50%;
+  margin: auto;
 }
-div.amarelo-h1 h1{
-    text-align: right;
+div.amarelo-h1 h1 {
+  text-align: right;
 }
-div.vermelho-h1 h1{
-    text-align: left;
+div.vermelho-h1 h1 {
+  text-align: left;
 }
 /*header#cabeca-log h1 #quebra{
     display: block;
 }*/
-header#cabeca-log .amrarelo-h1{
-    color: #F2CB05;
-
+header#cabeca-log .amrarelo-h1 {
+  color: #f2cb05;
 }
-header#cabeca-log .vermelho-h1{
-    color: #F10606;
-    background-color: white;
+header#cabeca-log .vermelho-h1 {
+  color: #f10606;
+  background-color: white;
 }
-.text-amarelo{
-    color: #F2CB05;
-    text-align: center;
-    margin-top: 140px;
+.text-amarelo {
+  color: #f2cb05;
+  text-align: center;
+  margin-top: 140px;
 }
-.contacto{
-    color: #F2CB05;
-    text-align: center;
+.contacto {
+  color: #f2cb05;
+  text-align: center;
 }
 /*Botão Registar*/
 #btn-Registrar{
