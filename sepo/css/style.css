@@ -321,6 +321,7 @@ input[readonly] {
   margin: 0;
 }
 /*Botão de confirmação de Voto*/
+
 .btn-confirmacao {
   display: block;
   margin: auto;
@@ -330,6 +331,8 @@ input[readonly] {
   background-color: green;
   color: #fff;
   border: 1px solid yellow;
+  cursor: pointer;
+
 }
 /*Iniciando o Logout*/
 #logout-ver-bra {
@@ -391,17 +394,50 @@ header#cabeca-log .vermelho-h1 {
   text-align: center;
 }
 /*Botão Registar*/
-#btn-Registrar {
-  margin: 8px auto 4px;
-  width: 180px;
-  height: 40px;
-  background-color: #f21616;
-  text-align: center;
-  color: #f2cb05;
-  border: none;
-  border-radius: 5px;
+#btn-Registrar{
+    margin: 8px auto 4px;
+    width: 180px;
+    height: 40px;
+    background-color: #F21616;
+    text-align: center;
+    color: #F2CB05;
+    border: none;
+    border-radius: 5px;
 }
-form p {
-  text-align: center;
-  color: #f21616;
+form p{
+    text-align: center;
+    color: #F21616;
+}
+/*Formulario de Informação*/
+div#informacao{
+    margin: 80px auto;
+    width: 600px;
+    background-color: #c2a516;
+    padding: 10px;
+}
+h1._informacao{
+    color: #fff;
+    width: 180px;
+    margin: auto;
+}
+.inf-p{
+    text-align: center;
+}
+/*Historia do */
+#corpo-historia{
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: #c2a516;
+}
+.centro-historia{
+    width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+.centro-historia p{
+    text-align: justify;
+}
+.centro-historia h1{
+    margin-top: 10px;
+    text-align: center;
 }
